@@ -1,0 +1,8 @@
+pathlib
+pytest
+spacy
+pandas
+numpy
+bs4
+black
+requests
