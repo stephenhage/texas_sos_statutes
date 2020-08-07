@@ -6,8 +6,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=statutes tests/*.py
-	python -m pytest --nbval notebook.ipynb
+	python -m pytest -vv --cov=devml --cov=dml tests/*.py
 
 
 lint:
