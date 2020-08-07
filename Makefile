@@ -6,7 +6,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=statutes tests/*.py
+	py.test --verbose --color=yes statutes/tests
 
 
 lint:
