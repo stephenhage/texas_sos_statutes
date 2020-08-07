@@ -6,7 +6,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=devml --cov=dml tests/*.py
+	python -m pytest -vv --cov=statutes tests/*.py
 
 
 lint:
