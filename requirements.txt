@@ -6,3 +6,5 @@ numpy
 bs4
 black
 requests
+scikit-learn
+sentence-transformers
