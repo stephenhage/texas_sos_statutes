@@ -62,14 +62,6 @@ def get_all_text(url):
         out_str = out_str[2:-2]
     return out_str.replace("Cont'd...", "")
 
-
-
-# reg_url = "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm"
-
-# statutes = get_first_page_tags(reg_url)
-# with open("/Users/stephenhage/Github/texas_sos_statutes/statutes/data/statutes_text.txt", "w+") as statutes_file:
-#     statutes_file.write(statutes.text)
-
 df = regs_table_with_links(url)
 df['regulation_text'] = df.urls.apply(get_all_text)
 df.to_excel("/Users/stephenhage/Github/texas_sos_statutes/statutes/data/tx_sales_tax_regulations.xlsx", sheet_name = "regulations", index = False)
